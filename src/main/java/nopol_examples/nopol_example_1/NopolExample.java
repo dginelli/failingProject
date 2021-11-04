@@ -7,7 +7,7 @@ public class NopolExample {
 	 * or the last if index > s.length
 	 * or the first if index < 0			
 	 */
-	public char charAt(String s, int index){
+	public char charAt(String s, int index) {
 		
 		if ( index == 0 ) // Fix index <= 0
 			return s.charAt(0) + "";
