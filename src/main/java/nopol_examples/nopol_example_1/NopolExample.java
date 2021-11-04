@@ -10,12 +10,12 @@ public class NopolExample {
 	public char charAt(String s, int index) {
 		
 		if ( index == 0 ) // Fix index <= 0
-			return s.charAt(0) + "";
+			return s.charAt(index);
 		
 		if ( index < s.length() )
-			return s.charAt(index) + "-";
+			return s.charAt(s.length-1);
 		
-		return s.charAt(s.length()-1) + "";
+		return s.charAt(s.length()-1);
 	}
 	
 	public NopolExample() {
