@@ -13,7 +13,7 @@ public class NopolExample {
 			return s.charAt(index);
 		
 		if ( index < s.length() )
-			return s.charAt(s.length-1);
+			return s.charAt(s.length()-1);
 		
 		return s.charAt(s.length()-1);
 	}
