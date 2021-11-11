@@ -9,34 +9,34 @@ public class NopolExample {
 		int tmp = (a-1)%2;
 		int foo = 0;
 		
-		if ( tmp != 0 ){ // Fix : tmp == 0
-			return true;
+		if ( tmp != 0 ){ // The fix is: tmp == 0
+			return true; 
 		}
-		return false;
+		return false; 
 		
 	}
 	
-	private void method(boolean aBoolean) {
-		int reachableVariable = 3;
-		int unreachableVariable;
-		if ("aaaa".startsWith("b")) {
-			unreachableVariable = 23;
+	private void method(boolean aBoolean ) { 
+		int reachableVariable = 3; 
+		int unreachableVariable; 
+		if ("aaaa".startsWith("b")) { 
+			unreachableVariable = 23;  
 		} else {
 			if (! aBoolean || reachableVariable < 2) {
 				unreachableVariable = 10;
-			}
-		}
+			} 
+		} 
 	}
 	
 	private void otherMethod(boolean aBoolean) {
 		int uninitializedReachableVariable;
 		if (aBoolean) {
 			uninitializedReachableVariable = 23;
-		} else {
+		} else { 
 			uninitializedReachableVariable = 11;
 			if (! aBoolean && uninitializedReachableVariable < 2) {
 				uninitializedReachableVariable = 10;
-			}
+			} 
 		}
 	}
 }
