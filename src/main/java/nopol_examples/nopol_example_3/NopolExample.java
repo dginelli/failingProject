@@ -9,7 +9,7 @@ public class NopolExample {
 		int tmp = (a-1)%2;
 		int foo = 0;
 		
-		if ( tmp != 0 ){ // The fix is: tmp == 0
+		if ( tmp != 0 ){ // Fix is: tmp == 0
 			return true; 
 		}
 		return false; 
