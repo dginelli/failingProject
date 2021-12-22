@@ -9,11 +9,10 @@ public class NopolExample {
 		int tmp = (a-1)%2;
 		int foo = 0;
 		
-		if (tmp < 0) {
+		if (tmp < 0) { 
 			return true;
 		}
 		return false;
-		
 	}
 	
 	private void method(boolean aBoolean) {
