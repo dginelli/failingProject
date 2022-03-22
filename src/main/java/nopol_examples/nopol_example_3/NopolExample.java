@@ -6,7 +6,7 @@ public class NopolExample {
 	 * Return true if a is odd number
 	 */
 	public boolean isOddNumber(int a) {
-		int tmp = (a-1)%2;
+		int tmp = (a-1)%2; // buggy line
 		int foo = 0;
 		
 		if (tmp != 0) {
